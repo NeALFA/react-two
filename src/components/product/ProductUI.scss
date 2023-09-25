@@ -1,0 +1,66 @@
+@use "../../utils/mixin" as mix;
+
+.product__container {
+  margin-top: 42px;
+  margin-bottom: 88px;
+  h2 {
+    @include mix.title-2;
+  }
+  .react-tabs__tab-list {
+    border: none;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    padding-bottom: 32px;
+  }
+  .react-tabs__tab {
+    border-radius: 61px;
+    border: 1px solid rgba(0, 16, 61, 0.12);
+    display: inline-block;
+    cursor: pointer;
+    color: #ef7c00;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    padding: 10px 20px;
+  }
+  .react-tabs__tab--selected {
+    border-radius: 61px;
+    background: #ef7c00;
+    color: #fff;
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px; /* 100% */
+  }
+  .tabpanel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .footer-div {
+    padding-top: 42px;
+    display: flex;
+    justify-content: center;
+    button {
+      color: #ef7c00;
+      text-align: center;
+      font-family: "Montserrat";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+
+      padding: 10px 20px;
+      background-color: transparent;
+      border-radius: 4px;
+      border: 1px solid #ef7c00;
+    }
+  }
+}

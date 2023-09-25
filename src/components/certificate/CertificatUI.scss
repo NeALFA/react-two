@@ -1,0 +1,38 @@
+@use "../../utils/mixin" as mix;
+
+.sertificat__container {
+  h2 {
+    @include mix.title-2;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    font-family: "slick";
+    font-size: 27px !important;
+    line-height: 1;
+    opacity: 0.75;
+    color: black !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 19px !important;
+    line-height: 20px;
+    position: absolute;
+    top: 10px !important;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #ef7c00 !important;
+  }
+}
